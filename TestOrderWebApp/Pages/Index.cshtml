@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Orders list";
+}
+
+<div id="content">
+    <div id="leftNav">
+        <div id="ordersList"></div>
+        <div id="orderTypes">
+            <p><div class="square purple"></div>In Progress</p>
+            <p><div class="square green"></div>Complete</p>
+        </div>
+    </div>
+    <div id="rightData">
+        <div id="orderInfo">
+            <table id="orderInfoTable">
+                <tr><td>Name</td><td id="orderName"></td></tr>
+                <tr><td>Date</td><td id="orderDate"></td></tr>
+                <tr><td>Status</td><td id="orderStatus"></td></tr>
+                <tr><td>Total</td><td id="orderTotal"></td></tr>
+            </table>
+        </div>
+        <div id="orderDetails">
+            <table id="orderDetailsList" class="detailTable">
+            </table>
+        </div>
+        <div id="orderTotals">
+            <table id="orderTotalList"  class="detailTable">
+            </table>
+        </div>
+    </div>
+</div>

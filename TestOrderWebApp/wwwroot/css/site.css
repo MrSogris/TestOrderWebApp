@@ -1,0 +1,138 @@
+﻿a, p, br, body, table, tr, td, span {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body {
+    background-color: white;
+    font: normal 15px arial, verdana;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftNav {
+    margin: 10px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#ordersList {
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+#orderTypes {
+    height: 100px;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+
+#rightData {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex: 2;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#orderInfo {
+    height: 120px;
+}
+
+#orderDetails {
+    border-top: 2px solid black;
+    overflow-y: scroll;
+    flex: 2;
+}
+
+#orderTotals {
+    border-top: 2px solid black;
+    height: 120px;
+}
+
+#orderInfoTable {
+    display: none;
+}
+
+    #orderInfoTable td {
+        padding: 5px;
+    }
+
+div.infoDiv {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.square {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.purple {
+    background-color: darkorchid;
+}
+
+.green {
+    background-color: green;
+}
+
+div.orderRow:hover {
+    background-color: darkgrey;
+}
+
+div.orderRow {
+    height: 35px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+div.selectedOrder {
+    background-color: antiquewhite;
+}
+
+table.detailTable {
+    display: none;
+    width: 100%;
+}
+
+    table.detailTable tr {
+        border-bottom: 2px solid black;
+    }
+
+    table.detailTable td {
+        padding: 10px;
+    }
+
+    table.detailTable th {
+        padding: 10px;
+    }
+
+td.productColumn{
+    width: 40%;
+}
+
+td.quantityColumn {
+    width: 20%;
+}
+
+td.priceColumn {
+    width: 20%;
+}
+
+td.totalColumn {
+    width: 20%;
+}
